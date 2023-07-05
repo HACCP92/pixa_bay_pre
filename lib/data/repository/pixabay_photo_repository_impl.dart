@@ -1,7 +1,8 @@
 import 'package:pixa_bay_pre/data/api/pixabay_api.dart';
 import 'package:pixa_bay_pre/data/mapper/photo_mapper.dart';
-import 'package:pixa_bay_pre/data/model/photo.dart';
-import 'package:pixa_bay_pre/data/repository/photo_repository.dart';
+import 'package:pixa_bay_pre/domain/repository/photo_repository.dart';
+
+import '../../domain/model/photo.dart';
 
 class PixabayPhotoRepositoryImpl implements PhotoRepository {
   final _api = PixabayApi();

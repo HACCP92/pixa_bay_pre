@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pixa_bay_pre/router/router.dart';
+import 'package:pixa_bay_pre/core/router/router.dart';
 
 void main() {
   runApp(const MyApp());

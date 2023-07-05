@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pixa_bay_pre/data/model/photo.dart';
-import 'package:pixa_bay_pre/data/repository/photo_repository.dart';
+import 'package:pixa_bay_pre/domain/model/photo.dart';
+
+import 'package:pixa_bay_pre/domain/repository/photo_repository.dart';
 
 class MainViewModel with ChangeNotifier {
   final PhotoRepository _repository;

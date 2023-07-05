@@ -1,9 +1,9 @@
 import 'package:go_router/go_router.dart';
-import 'package:pixa_bay_pre/data/model/photo.dart';
 import 'package:pixa_bay_pre/data/repository/pixabay_photo_repository_impl.dart';
-import 'package:pixa_bay_pre/ui/detail/detail_screen.dart';
-import 'package:pixa_bay_pre/ui/main/main_screen.dart';
-import 'package:pixa_bay_pre/ui/main/main_view_model.dart';
+import 'package:pixa_bay_pre/domain/model/photo.dart';
+import 'package:pixa_bay_pre/presentation/detail/detail_screen.dart';
+import 'package:pixa_bay_pre/presentation/main/main_screen.dart';
+import 'package:pixa_bay_pre/presentation/main/main_view_model.dart';
 import 'package:provider/provider.dart';
 
 // GoRouter configuration
@@ -20,7 +20,7 @@ final router = GoRouter(
       },
       routes: [
         GoRoute(
-          path: '/detail',
+          path: 'detail',
           builder: (context, state) {
             final photo = state.extra as Photo;
             return DetailScreen(photo: photo);
